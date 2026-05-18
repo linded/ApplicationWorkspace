@@ -21,7 +21,7 @@ Invoke-WebRequest -Uri ($container_url + $container + $agent + $sas_token) -OutF
 
 # Install with Liqut Agent BootStrapper
 Set-Location $destinationFolder
-.\AgentBootstrapper-Win-4.4.4130.3708.exe --zone "https://donny.liquit.com/" --registrationType Certificate --logPath ".\Install" --wait --certificate ".\AgentRegistration.cer" --startDeployment
+.\AgentBootstrapper-Win-4.4.4130.3708.exe --registrationType Certificate --logPath ".\Install" --wait --certificate ".\AgentRegistration.cer" --startDeployment
 
 
 
